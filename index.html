@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <div class="aside-items">
+            <img src="./src/images/logo.png" alt="Logo do Mundo Pet">
+            <nav>
+                <a href="#" class="first-button">Publicar</a>
+                <a href="#">
+                    <img src="./src/images/feed.png">
+                    Feed
+                </a>
+                <a href="#">
+                    <img src="./src/images/cat.png">
+                    Perfil
+                </a>
+                <a href="#">
+                    <img src="./src/images/info.png" class="aside-items__image-info">
+                    Sobre nós
+                </a>
+                <a href="#">
+                    <img src="./src/images/logout.png">
+                    Sair
+                </a>
+            </nav>
+        </div>
+    </aside>
+
+    <main>
+        <div class="main__upload">
+            <div class="upload-image">
+                <div class="upload-image__item">
+                    <img src="./src/images/Gato laranja.png" alt="Imagem de um gato laranja" class="upload-image__item__img">
+                </div>
+                <button class="upload-image__button">
+                    Carregar Imagem
+                    <img src="./src/images/upload.png">
+                </button>
+                <input type="file" accept="image/" style="display: none" class="upload-image__input"></input>
+                <a class="upload-image__info">
+                    <p>imagem_do_gato.png</p>
+                    <img src="./src/images/close.png">
+                </a>
+            </div>
+
+            <div class="upload-info">
+                <h2 class="upload-info__title">Nova foto</h2>
+                <form>
+                    <div class="form-item">
+                        <label>Título da foto</label>
+                        <input type="text" placeholder="Insira o título da foto" class="upload-info__input">
+                    </div>
+                    <div class="form-item">
+                        <label>Descrição</label>
+                        <textarea type="text" placeholder="Insira uma descrição para a foto" class="upload-info__input"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <label>Hashtags</label>
+                        <input type="text" placeholder="Insira hashtags relacionadas com a foto" class="upload-info__input">
+                        <div class="form-item__hashtag">
+                            <div class="form-item__hashtag__item">
+                                <label>Gato laranja</label>
+                                <img src="./src/images/close.png">
+                            </div>
+                            <div class="form-item__hashtag__item">
+                                <label>Gato adulto</label>
+                                <img src="./src/images/close.png">
+                            </div>
+                        </div>
+                        <div class="upload-info__button">
+                            <button type="reset" class="upload-info__button__item discard">
+                                Descartar
+                                <img src="./src/images/discard.png">
+                            </button>
+                            <button type="submit" class="upload-info__button__item publish">
+                                Publicar
+                                <img src="./src/images/publish.png" class="publish__image">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

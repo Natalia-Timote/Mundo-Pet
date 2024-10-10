@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    --background-color: #00090E;
+    --tag-color: #211727;
+    --primary-color: #FD7BF0;
+    --text-color: #888888;
+    --button-text-color: #132E35;
+    --form-text-color: #E1E1E1;
+    --input-color: #E7E5E5;
+    --font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+
+aside {
+    background-color: var(--tag-color);
+    width: 160px;
+    height: 100vh;
+    margin-top: 56px;
+    padding-top: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 40px;
+}
+
+nav a {
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.first-button {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 12px 32px;
+    margin: 0 16px;
+}
+
+.aside-items__image-info {
+    width: 50%; 
+    align-self: center;
+}
+
+main {
+    background-color: var(--tag-color);
+    display: flex;
+    flex-direction: row;
+    margin: 56px 0 0 40px;
+    padding: 32px;
+    gap: 24px;
+    border-radius: 8px;
+}
+
+.main__upload {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.upload-image {
+    width: 50%;
+}
+
+.upload-image__item__img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.upload-image__button {
+    background-color: transparent;
+    color: var(--text-color);
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-self: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.upload-image__info {
+    font-size: 16px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.upload-info {
+    font-size: 18px;
+    color: var(--form-text-color);
+    margin-right: 32px;
+    width: 50%;
+}
+
+.upload-info__title {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-item input,
+.form-item textarea {
+    border-radius: 4px;
+    width: 100%;
+    padding: 8px 16px;
+    background-color: var(--input-color);
+    color: var(--tag-color);
+    font-size: 16px;
+}
+
+.form-item textarea {
+    height: 160px;
+}
+
+.form-item__hashtag {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.form-item__hashtag__item {
+    font-size: 18px;
+    color: var(--tag-color);
+    background-color: var(--input-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 32px;
+    border-radius: 4px;
+    margin-top: 16px;
+    padding: 4px 8px;
+}
+
+.upload-info__button {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.upload-info__button__item {
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 12px 32px;
+    height: 48px;
+    width: 200px;
+}
+
+.discard {
+    background-color: transparent;
+    color: var(--primary-color);
+    
+}
+
+.publish {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+}
