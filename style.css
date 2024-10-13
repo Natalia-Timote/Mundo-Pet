@@ -104,6 +104,7 @@ main {
     align-self: center;
     justify-content: center;
     padding: 16px 0;
+    cursor: pointer;
 }
 
 .upload-image__info {
@@ -193,6 +194,7 @@ form {
     padding: 12px 32px;
     height: 48px;
     width: 200px;
+    cursor: pointer;
 }
 
 .discard {
